@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./images/restaurant_30dp_E85D04_FILL0_wght400_GRAD0_opsz24.png">
+
+    <title>Blisstful Bites</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/restaurant_30dp_E85D04_FILL0_wght400_GRAD0_opsz24.png" alt=""><h1>Blisstful Bites</h1>
+        </div>
+        <div class="links">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+              
+                <li><a href="#menu">menu</a></li>
+                <li class="button"><a href="#order">order now</a></li>
+            </ul>
+
+        </div>
+
+        
+        
+
+    </nav>
+    <div class="home" id="home">
+        <div class="left">
+            <h1>Welcome To</h1>
+            <h2>Blisstful Bites</h2>
+            <h3>Explore our food Adventure</h3>
+            <p>Discover an exquisite fusion of flavors and ambiance that promises to elevate your dining experience.
+                Indulge in our globally-inspired menu, crafted with care and passion. Join us and embark on a journey of
+                culinary delight. Your table awaits</p>
+
+        </div>
+        <div class="right">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/img1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/img2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/img3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/img4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/img5.png" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="menu" id="menu">
+        <h1>Delicious Delights: Explore Our Food Menu</h1>
+        <div class="swiper our-menu">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide menu-slide1"></div>
+                <div class="swiper-slide menu-slide2"></div>
+                <div class="swiper-slide menu-slide3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="container" id="order">
+
+        <h1>Order Your Food</h1>
+        <form id="orderForm">
+            <!-- User Details -->
+            <fieldset class="user-details">
+                <legend>User Details</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+            </fieldset>
+
+            <!-- Menu Items -->
+            <fieldset class="menu-items">
+                <legend>Menu Items</legend>
+
+                <!-- Main Course -->
+                <div class="menu-section">
+                    <h2>Main Course</h2>
+                    <div class="menu-item">
+                        <label for="cheeseburger-quantity">Cheeseburger - $34</label>
+                        <input type="number" id="cheeseburger-quantity" name="cheeseburger-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="cheese-sandwich-quantity">Cheese Sandwich - $22</label>
+                        <input type="number" id="cheese-sandwich-quantity" name="cheese-sandwich-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="chicken-burgers-quantity">Chicken Burgers - $23</label>
+                        <input type="number" id="chicken-burgers-quantity" name="chicken-burgers-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="spicy-chicken-quantity">Spicy Chicken - $33</label>
+                        <input type="number" id="spicy-chicken-quantity" name="spicy-chicken-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="hot-dog-quantity">Hot Dog - $24</label>
+                        <input type="number" id="hot-dog-quantity" name="hot-dog-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                </div>
+
+                <!-- Appetizers -->
+                <div class="menu-section">
+                    <h2>Appetizers</h2>
+                    <div class="menu-item">
+                        <label for="fruit-salad-quantity">Fruit Salad - $13</label>
+                        <input type="number" id="fruit-salad-quantity" name="fruit-salad-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="cocktails-quantity">Cocktails - $12</label>
+                        <input type="number" id="cocktails-quantity" name="cocktails-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="nuggets-quantity">Nuggets - $14</label>
+                        <input type="number" id="nuggets-quantity" name="nuggets-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="sandwich-quantity">Sandwich - $13</label>
+                        <input type="number" id="sandwich-quantity" name="sandwich-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="french-fries-quantity">French Fries - $15</label>
+                        <input type="number" id="french-fries-quantity" name="french-fries-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-section">
+                    <h2>Beverages</h2>
+                    <div class="menu-item">
+                        <label for="milk-shake-quantity">Milk Shake - $3</label>
+                        <input type="number" id="milk-shake-quantity" name="milk-shake-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="iced-tea-quantity">Iced Tea - $2</label>
+                        <input type="number" id="iced-tea-quantity" name="iced-tea-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="orange-juice-quantity">Orange Juice - $4</label>
+                        <input type="number" id="orange-juice-quantity" name="orange-juice-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="lemon-tea-quantity">Lemon Tea - $3</label>
+                        <input type="number" id="lemon-tea-quantity" name="lemon-tea-quantity" min="0"
+                            placeholder="Quantity">
+                    </div>
+                    <div class="menu-item">
+                        <label for="coffee-quantity">Coffee - $5</label>
+                        <input type="number" id="coffee-quantity" name="coffee-quantity" min="0" placeholder="Quantity">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+
+        <div id="order-summary" class="hidden">
+            <h2>Order Summary</h2>
+            <p id="summary-text"></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js.js"> </script>
+</body>
+
+</html>
